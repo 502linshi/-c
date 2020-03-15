@@ -37,3 +37,24 @@ int main(){
 	if(leap) yeardays+=366;
 	else yeardays+=365;
 	}
+		totaldays=yeardays+adddays-cutdays;
+	printf("您从出生到今日的总天数：%d\n",totaldays);
+	int a,b,c;
+	a=totaldays%23;
+	b=totaldays%28;
+	c=totaldays%33;
+	if(a<=11)
+		printf("您精力充沛，运动细胞活跃，这时工作效率倍增！\n");
+	else
+		printf("您体力最近出低迷，建议在家躺着！\n");
+	if(b<=14)
+		printf("您情绪活跃高涨，建议您老老实实学习！\n");
+	else
+		printf("您的情绪比较低落，建议你适当放松！\n");
+	if(c<=16)
+		printf("您智力处于黄金时期，建议：这个时候考试最能发挥全部实力！\n");
+	else
+	printf("您的智力比较低迷，建议：不要去参加考试！也不要参加智力活动。\n");
+	system("pause");
+}
+
